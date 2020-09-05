@@ -514,6 +514,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // 扫描Wi-Fi
                 scanWifi();
+                uploadWifiList();
+                predictState();
             }
         };
         // 定时运行
