@@ -36,7 +36,6 @@ public class GetDangerList {
                 .add("mac", mac)
                 .build();
         Request request = new Request.Builder().url("http://123.56.117.101:8080/getDanger").post(requestBody).build();
-        Toast toast = new Toast(context);
         Call call = okHttpClient.newCall(request);//发送请求
         call.enqueue(new Callback() {
             @Override
